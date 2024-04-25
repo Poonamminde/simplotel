@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #1e0536;
+  padding: 1rem 8rem;
+}
+.header-nav-button {
+  width: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-button1 {
+  background-color: #f5b41d;
+  font-weight: 300;
+  padding: 10px 12px;
+  border-radius: 5px;
+}
+.header-button2 {
+  color: white;
+  font-weight: 300;
+}
+#header-logo {
+  height: 110px;
+}
+#header-hero-img {
+  height: 70vh;
+}
+.footer-section {
+  background-color: #c92c7e;
+  text-align: center;
+  padding: 15px 10px 35px;
+  color: white;
+  font-size: 20px;
+  font-weight: 300;
+}
