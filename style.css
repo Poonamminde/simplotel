@@ -1,11 +1,19 @@
 * {
   margin: 0;
   padding: 0;
+  --css-green: #25b05d;
+  --css-red: #f5370c;
+  --css-yellow: #f5a316;
+  --css-white: white;
+  --css-purple: #1e0536;
+}
+a {
+  text-decoration: none;
 }
 .header-container {
   display: flex;
   justify-content: space-between;
-  background-color: #1e0536;
+  background-color: var(--css-purple);
   padding: 1rem 8rem;
 }
 .header-nav-button {
@@ -16,6 +24,7 @@
 }
 .header-button1 {
   background-color: #f5b41d;
+  text-decoration: none;
   font-weight: 300;
   padding: 10px 12px;
   border-radius: 5px;
@@ -29,6 +38,143 @@
 }
 #header-hero-img {
   height: 70vh;
+  width: 100%;
+  margin: 0;
+}
+.main-section {
+  background-color: #f5a316;
+  padding: 5rem 8rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+  font-size: 18px;
+  margin: 0px;
+}
+#image3 {
+  height: 29rem;
+  width: 35rem;
+  padding: 3rem;
+}
+#image4 {
+  height: 17rem;
+  width: 38rem;
+  padding: 3rem;
+}
+.main-section-1 {
+  display: flex;
+  justify-content: center;
+}
+.main-section-1 p {
+  text-align: center;
+  width: 60%;
+}
+.main-section-2 {
+  display: flex;
+  gap: 100px;
+  justify-content: space-evenly;
+}
+.main-section-2-sub {
+  width: 300px;
+}
+.accordion {
+  color: var(--css-green);
+  text-align: left;
+  background-color: var(--css-yellow);
+}
+.accordion .accordion-item {
+  background-color: var(--css-white);
+  margin: 10px 0px;
+}
+.text {
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+}
+.accordion-summary {
+  background-color: var(--css-green);
+  padding: 10px 10px;
+}
+.accordion-details-img {
+  width: 100%;
+}
+.accordion-details2 {
+  padding: 1rem 5rem;
+  color: rgba(28, 27, 27, 0.929);
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.accordion-details2-heading1 {
+  color: var(--css-red);
+}
+.accordion-details2-heading2 {
+  color: var(--css-green);
+}
+.accordion-details2-section2 {
+  display: flex;
+  justify-content: space-between;
+}
+.accordion-details2-section2 div h2 {
+  color: var(--css-purple);
+  padding: 5px 0px;
+}
+.accordion-details2-section2 img {
+  border: 5px solid rgb(148, 145, 145);
+  width: 12.5rem;
+  height: 6rem;
+  padding: 5px;
+}
+.accordion-details2-section3 {
+  height: 1.5rem;
+  background-color: rgb(188, 184, 184);
+}
+.accordion-details2-section4 {
+  display: flex;
+  justify-content: space-between;
+}
+.accordion-details2-section4 div {
+  padding: 10px 20px;
+}
+.accordion-details2-section4 .item {
+  border-right: 0.15rem dashed var(--css-red);
+}
+.accordion-details2-section4 div h3 {
+  color: var(--css-green);
+  padding: 20px 0px 0px;
+}
+.accordion-details2-subheading {
+  color: var(--css-red);
+  font-size: 24px;
+}
+.accordion-links {
+  display: flex;
+  justify-content: end;
+  gap: 2rem;
+}
+.accordion-button {
+  background-color: #1e0536;
+  font-weight: 500;
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 10px;
+}
+.accordion-button a {
+  color: white;
+}
+#other-sector-button {
+  background-color: #f55430;
+  width: 10rem;
+  padding: 10px 20px;
+  border-radius: 7px;
+  color: var(--css-white);
+  align-self: center;
+}
+#other-sector-button a {
+  color: var(--css-white);
+  font-size: 20px;
+  letter-spacing: 1px;
 }
 .footer-section {
   background-color: #c92c7e;
