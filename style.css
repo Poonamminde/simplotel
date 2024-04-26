@@ -1,11 +1,14 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "Segoe UI";
   --css-green: #25b05d;
   --css-red: #f5370c;
   --css-yellow: #f5a316;
   --css-white: white;
   --css-purple: #1e0536;
+  --css-pink: #c40056;
+  box-sizing: border-box;
 }
 a {
   text-decoration: none;
@@ -21,6 +24,12 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.header-button-collapse {
+  display: none;
+}
+.header-button-collapse-items {
+  display: none;
 }
 .header-button1 {
   background-color: #f5b41d;
@@ -46,25 +55,27 @@ a {
   padding: 5rem 8rem;
   text-align: center;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   gap: 3rem;
   font-size: 18px;
-  margin: 0px;
+  transform-origin: 0px 0px;
 }
 #image3 {
-  height: 29rem;
-  width: 35rem;
+  height: 30%;
+  width: 40%;
   padding: 3rem;
 }
 #image4 {
-  height: 17rem;
-  width: 38rem;
+  height: 15%;
+  width: 30%;
   padding: 3rem;
 }
 .main-section-1 {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .main-section-1 p {
   text-align: center;
@@ -72,6 +83,7 @@ a {
 }
 .main-section-2 {
   display: flex;
+  flex-wrap: wrap;
   gap: 100px;
   justify-content: space-evenly;
 }
@@ -114,6 +126,7 @@ a {
 }
 .accordion-details2-section2 {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 .accordion-details2-section2 div h2 {
@@ -132,6 +145,7 @@ a {
 }
 .accordion-details2-section4 {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 .accordion-details2-section4 div {
@@ -150,6 +164,7 @@ a {
 }
 .accordion-links {
   display: flex;
+  flex-wrap: wrap;
   justify-content: end;
   gap: 2rem;
 }
@@ -177,10 +192,72 @@ a {
   letter-spacing: 1px;
 }
 .footer-section {
-  background-color: #c92c7e;
+  background-color: var(--css-pink);
   text-align: center;
   padding: 15px 10px 35px;
   color: white;
   font-size: 20px;
   font-weight: 300;
+}
+@media only screen and (max-width: 992px) {
+  .header-container {
+    padding: 2px 5px;
+    width: 100%;
+  }
+  .header-nav-button {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+  }
+  .header-button-collapse {
+    display: block;
+    background-color: white;
+    height: 30px;
+    width: 40px;
+    padding: 3px;
+    color: black;
+    font-size: 5px;
+    font-weight: 800;
+  }
+  .header-button-collapse-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-section {
+    padding: 10px 10px;
+    box-sizing: border-box;
+  }
+}
+
+@media only screen and (max-width: 689px) {
+  /* CSS rules for mobile devices */
+
+  .header-container {
+    padding: 2px 5px;
+    box-sizing: border-box;
+  }
+  .header-nav-button {
+    display: none;
+    flex-direction: column;
+  }
+
+  .header-button-collapse {
+    display: block;
+    background-color: white;
+    height: 30px;
+    width: 40px;
+    padding: 3px;
+    color: black;
+    font-size: 5px;
+    font-weight: 800;
+  }
+  .header-button-collapse-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-section {
+    box-sizing: border-box;
+  }
 }

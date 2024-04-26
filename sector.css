@@ -1,0 +1,111 @@
+.main-section-paragraph {
+  padding: 20px;
+}
+.main-section-heading {
+  color: var(--css-pink);
+  font-weight: bold;
+  padding: 10px;
+}
+#sector-img1 {
+  height: 30%;
+  width: 40%;
+  margin: 10px;
+}
+
+.sector-wise-winner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.sector-wise-winner-item {
+  width: 250px;
+  padding: 10px;
+}
+.sector-wise-winner img {
+  background-color: #1e0536;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+}
+#paragraph-border {
+  border: 2px dashed var(--css-pink);
+  margin: 15px;
+  border-radius: 15px;
+  width: 60%;
+}
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+.map {
+  position: relative;
+  display: inline-flex;
+}
+.map-point {
+  position: absolute;
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+  background-color: blue;
+}
+#map-1 {
+  top: 90px;
+  left: 150px;
+}
+#map-2 {
+  top: 70px;
+  left: 210px;
+}
+#map-3 {
+  top: 167px;
+  left: 169px;
+}
+#map-4 {
+  top: 289px;
+  left: 379px;
+}
+#map-5 {
+  top: 430px;
+  left: 161px;
+}
+#map-6 {
+  top: 365px;
+  left: 68px;
+}
+.tooltip {
+  display: none;
+  width: 200px;
+  background-color: white;
+  z-index: 10;
+}
+#map-1:hover {
+  .tooltip1 {
+    display: block;
+  }
+}
+#map-2:hover {
+  .tooltip2 {
+    display: block;
+  }
+}
+#map-3:hover {
+  .tooltip3 {
+    display: block;
+  }
+}
+#map-4:hover {
+  .tooltip4 {
+    display: block;
+  }
+}
+#map-5:hover {
+  .tooltip5 {
+    display: block;
+  }
+}
+#map-6:hover {
+  .tooltip6 {
+    display: block;
+  }
+}

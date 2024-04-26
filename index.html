@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simplotel</title>
     <link rel="stylesheet" href="style.css" />
+    <script>
+      let flag = true;
+      function display() {
+        console.log("he");
+        document.getElementsByClassName("header-nav-button")[0].style.display =
+          flag ? "flex" : "none";
+        flag = !flag;
+      }
+    </script>
   </head>
   <body>
     <header>
@@ -26,9 +35,16 @@
             ><h3 class="header-button1">NSA 2021 Report</h3></a
           >
         </div>
+        <div class="header-button-collapse" onclick="display()">
+          ________<br />
+          ________<br />
+          ________
+        </div>
       </div>
-      <img src="Head-banner.jpg" alt="hero-img" id="header-hero-img" />
+      <br />
     </header>
+
+    <img src="Head-banner.jpg" alt="hero-img" id="header-hero-img" />
     <main class="main-section">
       <div class="main-section-1">
         <p>
